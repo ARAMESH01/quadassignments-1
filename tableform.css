@@ -1,0 +1,128 @@
+body {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 100px auto 100px;
+  /* grid-template-rows: repeat(3, 100px); */
+  grid-gap: 1em;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #ccc;
+  padding: 1em;
+}
+
+header {
+  /* Start on Row 1 */
+  grid-row: 1;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 4;
+}
+
+.sidebar-left {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the first column line and stop at the next column line */
+  grid-column: 1 / 2;
+}
+
+article {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the second column line and stop at the third column line */
+  grid-column: 2 / 3;
+}
+
+.sidebar-right {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the third column line and stop at the last column line */
+  grid-column: 3 / 4;
+}
+
+footer {
+  /* Start on Row 3, the last row */
+  grid-row: 3;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 4;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  /* display: inline-block; */
+  /* width: 90px; */
+  text-align: right;
+  /* right: 50px; */
+}
+
+/* form {
+  margin: auto;
+  position: relative;
+}
+.form-element {
+  position: relative;
+}
+
+.form-input {
+  position: relative;
+  right: 50px;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid #999; */
+  padding: 0.5rem;
+  text-align: left;
+}
+
+td.form-label {
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li.right-menu-item {
+  float: right;
+}
+
+img {
+  float: left;
+  height: 50px;
+  width: 50px;
+  /* max-width: 100%;
+  max-height: 100%; */
+  /* background: url('/users/rnella01/workspaces/html/images/logo.png'); */
+ }
