@@ -1,0 +1,121 @@
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <title>Quadyster Form</title>
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mediaq.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#"><i>Quadyster</i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+     <div class="collapse navbar-collapse">
+       <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-home" style="color:red;"> Home </i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-user" style="color:orange"> Users </i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-globe" style="color:cyan">Portals</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-tasks" style="color:olive">Opportunities</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-bullseye" style="color:lime">New Opportunity</i></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <article>
+      <form>
+        <div class="form-group row">
+          <label for="portal-code" class="col-md-2 col-form-label">        Portal Code</label>
+          <div class="col-md-10">
+          <input type="text" class="form-control" id="portal-code" placeholder="portal-code">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="payment-system-name" class="col-md-2 col-form-label">Name</label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" id="payment-system-name" placeholder="Payment System">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="payment-category" class="col-md-2 col-form-label">Category</label>
+          <div class="col-md-10">
+            <select id="payment-category" name="payment-category" class="form-control">
+              <option value=""></option>
+              <option value="visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="portal-url" class="col-md-2 col-form-label">Portal Url</label>
+          <div class="col-md-10">
+            <input type="email" class="form-control" id="portal-url" placeholder="Portal URL">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="portal-user-id" class="col-md-2 col-form-label">Portal User Id</label>
+          <div class="col-md-10">
+            <input id="portal-user-id" type="text" class="form-control" placeholder="Portal User Id">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="portal-user-password" class="col-md-2 col-form-label">Portal User Password</label>
+          <div class="col-md-10">
+            <input id="portal-user-password" type="password" class="form-control" placeholder="place-user-password">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="admin-user" class="col-md-2 col-form-label">Admin User</label>
+          <div class="col-md-10">
+            <select id="admin-user" type="text" class="form-control" placeholder="admin-user">
+              <option value=""></option>
+              <option value="Biju Ninan">Biju Ninan</option>
+              <option value="Biju Ninan">Hari Banda</option>
+              <option value="Biju Ninan">CBL</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="notification-email" class="col-md-2 col-form-label">Notification Email</label>
+          <div class="col-md-10">
+            <input id="notification-email" type="email" class="form-control" placeholder="user@email.com">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="note" class="col-md-2 col-form-label">Note</label>
+          <div class="col-md-10">
+            <textarea class="form-control" id="note" type="text" rows="10">write something here</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </article>
+  </div>
+</body>
+</htm>
